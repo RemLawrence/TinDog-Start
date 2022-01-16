@@ -18,12 +18,13 @@ h2 {
 #title {
   color: white;
   background-color: #ff4c68;
+  position: relative;
+  z-index: -1;
 }
 
 .container-fluid {
-  padding: 3% 11%;
+  padding: 3% 11% 7%;
 }
-
 
 /* Navigation Bar */
 .navbar {
@@ -52,15 +53,16 @@ h2 {
 
 /* Title Image */
 .title-image {
-  width: 70%;
+  width: 30%;
   padding-left: 7.5rem;
   transform: rotate(25deg);
+  position: absolute;
 }
-
-
 
 #features {
   text-align: center;
+  background-color: white;
+  position: relative;
 }
 
 .feature-box {
@@ -112,4 +114,30 @@ h2 {
 .press-logo {
   margin: 20px 20px 50px;
   width: 15%;
+}
+
+.signup-btn {
+  width: 80%;
+}
+
+/* Pricing Section */
+#pricing {
+  text-align: center;
+  padding: 100px;
+}
+
+.pricing-col {
+  padding: 3% 2%;
+}
+
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+  .title-image {
+    position: static;
+    transform: rotate(0);
+    padding-left: 0;
+    text-align: center;
+  }
 }
